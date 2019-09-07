@@ -1,0 +1,92 @@
+$(document).ready(function(){
+  var order = [
+    {
+      "Name":"name1",
+      "date":"2019-08-10",
+      "orders":[
+        {
+          "product":"beer1",
+          "quantity":"3",
+          "price":"5",
+          "subtotal":"10"
+        },
+        {
+          "product":"beer2",
+          "quantity":"1",
+          "price":"7",
+          "subtotal":"7"
+        }
+      ],
+      "total":
+      {
+        "subtotal":"17",
+        "tax":"2.21",
+        "total":"19.21"
+      }
+    },
+    {
+      "Name":"name2",
+      "date":"2019-07-15",
+      "orders":
+        [{
+          "product":"beer1",
+          "quantity":"2",
+          "price":"5",
+          "subtotal":"10"
+        }]
+        ,
+      "total":
+      {
+        "subtotal":"10",
+        "tax":"1.30",
+        "total":"11.30"
+      }
+    },
+    {
+      "Name":"name3",
+      "date":"2019-07-12",
+      "orders":
+        [{
+          "product":"beer1",
+          "quantity":"2",
+          "price":"5",
+          "subtotal":"10"
+        }]
+      ,
+      "total":
+      {
+        "subtotal":"10",
+        "tax":"1.30",
+        "total":"11.30"
+      }
+    },
+    {
+      "Name":"name4",
+      "date":"2019-07-10",
+      "orders":
+        [{
+          "product":"beer1",
+          "quantity":"2",
+          "price":"5",
+          "subtotal":"10"
+        }]
+      ,
+      "total":
+      {
+        "subtotal":"10",
+        "tax":"1.30",
+        "total":"11.30"
+      }
+    }
+  ]
+
+
+var tr = '';
+  $.each(order, function(i, val){
+    tr = '<tr class="clickable" data-toggle = "collapse" data-target="#orders' + i + '" aria-expanded="false"><td>' + (i+1) + '</td><td>' + val["Name"] + '</td><td>' + val["total"]["total"] + '</td></tr>';
+    $.each(val.orders, function(j, vals){
+      tr += '<tr id="orders' + i + '" class="collapse"><td>' + '' + '</td><td>' + vals["product"] + '</td><td>' + vals["quantity"] + '</td></tr>';
+  });
+        $('#order-table').append(tr);
+  });
+});
