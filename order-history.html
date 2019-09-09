@@ -17,8 +17,10 @@
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css" rel="stylesheet">
     <style type="text/css">
-       body {background: #fec107 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+       body {background: #ffe28a !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+       .collapsing {transition: none;}
     </style>
 
 </head>
@@ -102,14 +104,15 @@
         </header>
         <!-- Header Area End -->
 
-        <div class="order-history-table-area mt-5 w-100">
+        <!-- ##### Main Content Wrapper End ##### -->
+        <div class="order-history-table-area mt-4 w-100">
             <div class="container-fluid">
-              <div class="order-history-title">
-                <h2>Order History</h2>
+              <div class="order-history-title mb-4">
+                <h2 class="text-center">Order History</h2>
               </div>
               <div class="order-history-table clearfix">
-                <table class="table table-light table-bordered table-hover">
-                  <thead>
+                <table class="table bg-light">
+                  <thead class="thead-light">
                     <th style="width: 30%">Location</th>
                     <th style="width: 40%">Time</th>
                     <th style="width: 30%">Amount</th>
@@ -126,12 +129,26 @@
     <!-- ##### Footer Area Start ##### -->
     <!-- ##### Footer Area End ##### -->
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- <script src="js/jquery/jquery-3.4.1.min.js"></script> -->
     <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
     <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <!-- Plugins js -->
     <script src="js/plugins.js"></script>
     <!-- Active js -->
@@ -140,6 +157,6 @@
     <!-- Order History js -->
     <script src="js/order-history.js"></script>
 
-</body>
+    <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
 
 </html>
