@@ -23,6 +23,10 @@
        .collapsing {transition: none;}
     </style>
 
+    <!-- Datatable -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -111,7 +115,7 @@
                 <h2 class="text-center">Order History</h2>
               </div>
               <div class="order-history-table clearfix">
-                <table class="table bg-light">
+                <table id="example" class="table bg-light">
                   <thead class="thead-light">
                     <th style="width: 30%">Location</th>
                     <th style="width: 40%">Time</th>
@@ -153,10 +157,6 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-
     <!-- Order History js -->
     <script src="js/order-history.js"></script>
-
-    <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
-
 </html>
