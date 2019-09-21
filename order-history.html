@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Ventaco - The future is better together</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css" rel="stylesheet">
+    <style type="text/css">
+       body {background: #ffe28a !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+       .collapsing {transition: none;}
+    </style>
+
+</head>
+
+<body>
+    <!-- Search Wrapper Area Start -->
+    <div class="search-wrapper section-padding-100">
+        <div class="search-close">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-content">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type your keyword...">
+                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Wrapper Area End -->
+
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
+
+		<!-- Mobile Nav (max width 767px)-->
+		<div class="mobile-nav">
+			<!-- Navbar Brand -->
+			<div class="amado-navbar-brand">
+				<a href="home.html"><img src="img/logo.jpg" alt=""></a>
+			</div>
+		</div>
+
+		<!-- Header Area Start -->
+		<header class="header-area clearfix">
+			<!-- Close Icon -->
+			<div class="nav-close">
+				<i class="fa fa-close" aria-hidden="true"></i>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="home.html"><img src="img/logo.jpg" alt=""></a>
+			</div>
+            <!-- Amado Nav -->
+			<nav class="amado-nav">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="cart.html">Cart</a></li>
+					<li><a href="ordering.html">Ordering</a></li>
+					<li class="active"><a href="order-history.html">Order History</a></li>
+					<li><a href="">Load Coin</a></li>
+					<li><a href="checkout.html">Checkout</a></li>
+				</ul>
+			</nav>
+        </header>
+        <!-- Header Area End -->
+
+        <!-- ##### Main Content Wrapper End ##### -->
+        <div class="order-history-table-area mt-4 w-100">
+            <div class="container-fluid">
+              <div class="order-history-title mb-4">
+                <h2 class="text-center">Order History</h2>
+              </div>
+              <div class="order-history-table clearfix">
+                <table class="table bg-light">
+                  <thead class="thead-light">
+                    <th style="width: 30%">Location</th>
+                    <th style="width: 40%">Time</th>
+                    <th style="width: 30%">Amount</th>
+                  </thead>
+                  <tbody id="history-table">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Main Content Wrapper End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <!-- <script src="js/jquery/jquery-3.4.1.min.js"></script> -->
+    <!-- Popper js -->
+    <!-- <script src="js/popper.min.js"></script> -->
+    <!-- Bootstrap js -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <!-- Order History js -->
+    <script src="js/order-history.js"></script>
+
+    <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
+
+</html>
