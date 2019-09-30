@@ -1,5 +1,262 @@
 $(document).ready(function(){
-  var history2 = $.get('js/data.json', 'json');
+  var history2 = [
+    {
+      "id":"100100100",
+      "date":"2019-08-10",
+      "location":"stoOOOOre1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"200200200",
+      "date":"2019-07-15",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"300300300",
+      "date":"2019-07-12",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"400400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"500400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"600400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"700400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"800400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"900400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"100400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    }
+    ,
+    {
+      "id":"12300400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"12320400400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"4023400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"423423424400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    },
+    {
+      "id":"40qweqwe400",
+      "date":"2019-07-10",
+      "location":"store1",
+      "orders":[
+        {
+          "product":"item1",
+          "quantity":"1",
+          "price":"5"
+        },
+        {
+          "product":"item2",
+          "quantity":"1",
+          "price":"10"
+        }
+      ]
+    }
+  ]
 
   $.fn.add = function(a, b){
     var a, b, result;
@@ -7,7 +264,7 @@ $(document).ready(function(){
   };
   $.fn.product = function(a, b){
     var a, b, result;
-    return result = a * b
+    return result = a * b;
   };
   $.fn.calcsubtot = function(ordls){
     var ordls;
@@ -23,9 +280,9 @@ $(document).ready(function(){
     tax = $.fn.product(subtot, 0.13);
     return result = $.fn.add(subtot, tax)
   };
-  $.fn.taggen = function(tag, cls="", content){
-    var tag, cls, content, result;
-    result = "<"+tag+" class="+cls+">"+content+"</"+tag+">";
+  $.fn.taggen = function(tag, content){
+    var tag, content, result;
+    result = "<"+tag+">"+content+"</"+tag+">";
     return result
   };
   $.fn.subtablecontents = function(orders){
@@ -34,19 +291,19 @@ $(document).ready(function(){
     contents = $.fn.add(contents, header);
     $.each(orders, function(i, item){
       var name = item["product"];
-      var pp = "$"+item["price"];
+      var pp = item["price"];
       var qq = item["quantity"];
       var line = "<tr><td>"+name+"</td><td>"+pp+"</td><td>"+qq+"</td></tr>";
       contents = $.fn.add(contents, line)});
     var subtot = $.fn.calcsubtot(orders);
-    var tax = $.fn.product(subtot, 0.13);
+    var tax = $.fn.product($.fn.product(subtot,13), 0.01);
     var tot = $.fn.add(subtot, tax);
-    foot_1 = "<tr class='text-right'><td></td><td>SUBTOTAL</td><td>$"+subtot+"</td></tr>";
-    foot_2 = "<tr class='text-right'><td></td><td>TAX</td><td>$"+tax+"</td></tr>";
-    foot_3 = "<tr class='text-right'><td></td><td>TOTAL</td><td>$"+tot+"</td></tr>";
+    foot_1 = "<tr class='table-borderless'><td></td><td>Subtotal</td><td>"+subtot+"</td></tr>";
+    foot_2 = "<tr class='table-borderless'><td></td><td>Tax</td><td>"+tax+"</td></tr>";
+    foot_3 = "<tr class='table-borderless'><td></td><td>Total</td><td>"+tot+"</td></tr>";
     footer = foot_1+foot_2+foot_3;
     contents = $.fn.add(contents, footer);
-    result = $.fn.taggen("td colspan='3'",$.fn.taggen("table class='table table-bordered bg-light'", $.fn.taggen("tbody", contents)));
+    result = $.fn.taggen("td colspan='3'",$.fn.taggen("table class='table table-sm table-bordered bg-light'", $.fn.taggen("tbody", contents)));
     return result
   };
 
