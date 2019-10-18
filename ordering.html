@@ -22,21 +22,20 @@
 </head>
 
 <body>
+<!-- ##### Main Content Wrapper Start ##### -->
+<div class="main-content-wrapper d-flex clearfix">
 
-    <!-- ##### Main Content Wrapper Start ##### -->
-    <div class="main-content-wrapper d-flex clearfix">
-
-        <!-- Mobile Nav (max width 767px)-->
-        <div class="mobile-nav">
-            <!-- Navbar Brand -->
-            <div class="amado-navbar-brand">
-                <a href="index.html"><img src="img/logo.jpg" alt=""></a>
-            </div>
-            <!-- Navbar Toggler -->
-            <div class="amado-navbar-toggler">
-                <span></span><span></span><span></span>
-            </div>
+    <!-- Mobile Nav (max width 767px)-->
+    <div class="mobile-nav">
+        <!-- Navbar Brand -->
+        <div class="amado-navbar-brand">
+            <a href="index.html"><img src="img/logo.jpg" alt=""></a>
         </div>
+        <!-- Navbar Toggler -->
+        <div class="amado-navbar-toggler">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
 
         <!-- Header Area Start -->
         <header class="header-area clearfix">
@@ -62,63 +61,93 @@
 				</ul>
 			</nav>
 
-        </header>
-        <!-- Header Area End -->
+
+    </header>
+    <!-- Header Area End -->
 
 
-<!-- ##### Main Content Wrapper Start ##### -->
-            <div class="table-area mt-4 w-100">
-                <div class="container-fluid">
-                        <div class="order-title mb-4">
-                            <div class="order-title"><h2 class="text-center">Orders</h2><div>
-                            <div class="orders-table clearfix">
-                                  <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>Order #</th>
-                                            <th>Name</th>
-                                            <th>Price</th>
-                                            <th></th>
-                                            <th></th>
-                                          </tr>
-                                    </thead>
-                                  <tbody id='order-table'></tbody>
-
-                                </table>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="table-area mt-4 w-100">
+        <div class="container-fluid">
+            <div class="order-title mb-4">
+                <div class="order-title"><h2 class="text-center">Orders</h2>
+                    <div>
+                        <div class="orders-table clearfix">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Order #</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody id='order-table'></tbody>
+                            </table>
                         </div>
-                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <!-- ##### Main Content Wrapper End ##### -->
+    <div class="table-area mt-4 w-100">
+        <div class="container-fluid">
+            <div class="order-title mb-4">
+                <div class="order-title"><h2 class="text-center">Accepted Orders</h2>
+                    <div>
+                        <div class="orders-table clearfix">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Order #</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody id='Accepted-table'></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <!-- for reject modal-->
-                <style>
-                .modal {
-                  position: absolute;
-                  left: 50%;
-                  top: 50%;
-                  transform: translate(-50%, -50%);
-                }
-                .modal-backdrop{z-index: -1;}
-                  </style>
+
+    <!-- ##### Main Content Wrapper End ##### -->
+
+    <!-- for reject modal-->
+    <style>
+        .modal {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .modal-backdrop {
+            z-index: -1;
+        }
+    </style>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
     <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
     <!-- <script src="js/jquery/jquery-3.4.1.min.js"></script>-->
@@ -134,7 +163,6 @@
     <script src="js/Orders.js"></script>
 
     <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
-
 
 
 </body>
