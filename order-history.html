@@ -19,32 +19,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css" rel="stylesheet">
     <style type="text/css">
-       body {background: #ffe28a !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
        .collapsing {transition: none;}
     </style>
-
 </head>
 
 <body>
-    <!-- Search Wrapper Area Start -->
-    <div class="search-wrapper section-padding-100">
-        <div class="search-close">
-            <i class="fa fa-close" aria-hidden="true"></i>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="search-content">
-                        <form action="#" method="get">
-                            <input type="search" name="search" id="search" placeholder="Type your keyword...">
-                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Search Wrapper Area End -->
 
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
@@ -55,6 +34,10 @@
 			<div class="amado-navbar-brand">
 				<a href="home.html"><img src="img/logo.jpg" alt=""></a>
 			</div>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
 		</div>
 
 		<!-- Header Area Start -->
@@ -84,22 +67,28 @@
         <!-- Header Area End -->
 
         <!-- ##### Main Content Wrapper End ##### -->
-        <div class="order-history-table-area mt-4 w-100">
+        <div class="order-history-table-area section-padding-100">
             <div class="container-fluid">
-              <div class="order-history-title mb-4">
-                <h2 class="text-center">Order History</h2>
-              </div>
-              <div class="order-history-table clearfix">
-                <table class="table bg-light">
-                  <thead class="thead-light">
-                    <th style="width: 30%">Location</th>
-                    <th style="width: 40%">Time</th>
-                    <th style="width: 30%">Amount</th>
-                  </thead>
-                  <tbody id="history-table">
-                  </tbody>
-                </table>
-              </div>
+                <div class="row">
+                    <div class="col-12" style="max-width: 800px;">
+                        <div class="table-title">
+                            <h2>Order History</h2>
+                        </div>
+                        <div class="order-history-table">
+                            <table id="example" class="table table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Location</th>
+                                        <th>Time</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="history-table">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -132,10 +121,7 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-
     <!-- Order History js -->
     <script src="js/order-history.js"></script>
-
-    <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
-
+</body>
 </html>
